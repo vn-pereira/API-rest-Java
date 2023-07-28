@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/aluno")
 public class AlunoController {
-	
+
 	@GetMapping
 	public Aluno getInfo(){
 		Aluno aluno = new Aluno(matricula: 1L, nome: "Thiago Silva", telefone: "8977-5547", email: "thiagosilva@gmail.com", Instant.now());	
